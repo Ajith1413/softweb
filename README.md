@@ -857,6 +857,10 @@ Developed By: AJITH KUMAR A
     </html>
 ~~~
 ## OUTPUT:
+![image](https://github.com/Ajith1413/softweb/assets/139842524/04659030-21b7-4a31-801b-69922aedcc88)
+![image](https://github.com/Ajith1413/softweb/assets/139842524/44b23ff3-7d0e-4a84-9e47-841c1a216e52)
+![image](https://github.com/Ajith1413/softweb/assets/139842524/41ce384d-9676-4298-a0f9-b25ed33cf694)
+![image](https://github.com/Ajith1413/softweb/assets/139842524/ce338a21-5314-4649-924d-9b65c1d18774)
 
 
 ## RESULT:
