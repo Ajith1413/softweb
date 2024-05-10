@@ -1,5 +1,5 @@
 # Ex.07 Software Product Company Website
-## Date:
+## Date: 
 
 ## AIM:
 To develop a static company website to display the softwares and services provided by the company.
@@ -32,836 +32,620 @@ Publish the website in the given URL.
 Register number: 212223230009
 Developed By: AJITH KUMAR A
 
-<!DOCTYPE html>
-<html lang="en">
+home.html
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1 {
-            color:black;
-            font-size: 45px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            position: absolute;
-            top: 35%;
-        }
-
-        body {
-            background-color:grey;
-            margin: 0;
-        }
-
-        .navbar ul {
-            list-style-type: none;
-            background-color:lightblue;
-
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 25px;
-            display: flex;
-            text-align: left;
-            position: relative;
-            font-size: 20px;
-            top: -95px;
-
-        }
-
-        .navbar a:hover {
-            background-color: lightblue;
-            size: 60px;
-            cursor: pointer;
-        }
-
-        .navbar li {
-            float: right;
-        }
-
-        h2 {
-            color: white;
-            font-family: monospace;
-            font-size: 60px;
-            background-color:black;
-        }
-
-        footer {
-            text-align: center;
-
-            background-color: black;
-            height: 30px;
-            bottom: 0;
-            width: 100%;
-            color: white;
-            position: absolute;
-
-        }
-
-        header {
-            background-color:black;
-            height: 10vh;
-            width: 100%;
-            color: white;
-        }
-
-        header h2 {
-            position: absolute;
-            color: white;
-            margin-top: 10px;
-            margin-left: 10px;
-        }
-
-        .first,
-        .second,
-        .third {
-            font-size: 50px;
-            margin-left: 2px;
-        }
-
-        .second {
-            color:rgb(10, 58, 10);
-            text-align: center;
-        }
-
-        .third {
-            text-align: center;
-        }
-        .first{
-            margin-left:5px;
-        }
-        .search input,
-        button {
-            position: absolute;
-            right: 12px;
-            font-size: 18px;
-            border-color: silver;
-        }
-
-        .d {
-            position: absolute;
-            top: 65%;
-            font-size: 20px;
-        }
-
-        .search input {
-            width: 18%;
-            height: 30px;
-
-        }
-
-        .search button,
-        .d button {
-            color: white;
-            background-color: rgb(22, 165, 222);
-            padding: 5px;
-            text-align: center;
-        }
-
-        .d button {
-
-            margin-right: 500px;
-            padding: 20px 30px 20px 30px;
-            border-radius: 30px;
-            border-color: none;
-        }
-
-        #joinus:hover {
-            cursor: pointer;
-            color: rgb(5, 20, 15);
-            background-color: rgb(215, 249, 250);
-        }
-
-        .login form {
-            position: absolute;
-            right: 100px;
-            top: 30%;
-            margin: 20px;
-            box-sizing: border-box;
-            border-color: rgb(105, 62, 7);
-            background-color: rgba(25, 23, 20, 0.6);
-            padding: 80px 80px 200px 80px;
-        }
-
-        .login form button {
-            background-color: rgb(22, 165, 222);
-            margin-right: 50px;
-            color: white;
-            padding: 10px 35px 10px 35px;
-            font-size: 15px;
-            border-radius: 15%;
-            width: 60%;
-        }
-
-        .login form h3 {
-            color: rgb(13, 12, 12);
-            position: absolute;
-            top: 0%;
-            padding: 5px 30px 5px 30px;
-            background-color: rgb(248, 250, 250);
-            text-align: center;
-            margin-left: 18px;
-
-
-        }
-
-        .login form input {
-            height: 35px;
-            border: none;
-            border-bottom: 2px solid lightblue;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            font-size: 15px;
-            background: transparent;
-        }
-
-        .login ::placeholder {
-            color: white;
-            opacity: 1;
-        }
-
-        .login form h4 {
-            position: absolute;
-            top: 55%;
-            color: white;
-            margin-left: 25px;
-        }
-
-        .login form .Signup {
-            position: absolute;
-            top: 70%;
-            color: white;
-            margin-left: 35px;
-        }
-
-        .login form .Signup b a {
-            text-decoration: none;
-            color:black;
-            margin-left: 20px;
-        }
-
-        
-        .login form h5 {
-            position: absolute;
-            top: 73%;
-            color: white;
-            margin-left: 65px;
-        }
-
-        .login form .image {
-            position: absolute;
-            top: 85%;
-            margin-left: 40px;
-
-        }
-
-        .d p {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h2>Aura tech</h2>
-    </header>
-    <nav class="navbar">
-
-        <ul>
-            <li><a href="contact.html">Help</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="people.html">People</a></li>
-            <li><a href="index.html">Home</a></li>
-        </ul>
-    </nav>
-    <div class="search"><input type="text" placeholder="Enter to Search">
-        <button>Search</button>
-    </div>
-    <h1>
-        <div class="first">Expert Consultants</div>
-        <div class="second">For <br> </div>
-        <div class="third">Your Business</div>
-    </h1>
-    <div class="d">
-        <p> &nbsp;"Digital Martketing | Sales |Affiliate Martketing "</p>
-        <button id="joinus">Collab With Us</button>
-    </div>
-    <div class="login">
-        <form>
-            <h3>Login Here</h3>
-            <input type="text" placeholder="Username or Email"><br><br>
-            <input type="password" placeholder="Passcode"><br><br><br>
-            <button>Login</button>
-            <h4>Don't have an account</h4><br>
-            <div class="Signup"><b><a href="">Sign up</a></b> here</div>
-            <h5>Login with</h5>
-            <div class="image">
-                <img src="1.jpg" width="25px">
-                <img src="2.jpg" width="25px">
-                <img src="3.jpg" width="25px">
-                <img src="4.png" width="25px">
-            </div>
-        </form>
-    </div>
-    <footer>
-        Designed and Developed by Rohith.v &copy; 2023
-    </footer>
-
-</body>
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-        color:black;
-        font-size: 45px;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        position: absolute;
-        top:35%;
-        }
-        body{
-        background-color:silver;
-        margin:0;
-        }
-        .navbar ul{
-        list-style-type:none;
-        background-color:blac;
-        
-        }
-        .navbar a{
-         color:white;
-        text-decoration:none;
-        padding:25px;
-        display:flex;
-        text-align:left;
-        position: relative;
-        font-size:20px;
-        top:-95px;
-        
-        }
-        .navbar a:hover{
-         background-color:black;
-        size:60px;
-        cursor: pointer;
-        }
-        .navbar li{
-        float:right;
-        }
-        h2{
-        color:white;
-        font-family:monospace;
-        font-size:60px;
-        background-color:black;
-        }
-        footer{
-        text-align: center;
-
-        background-color:black;
-        height:30px;
-        bottom:0;
-        width:100%;
-        color:white;
-        position:absolute;
-        
-        }
-        header
-        {
-        background-color:black;
-        height:10vh;
-        width:100%;
-        color:white;
-        }
-        header h2{
-        position:absolute;
-        color:white;
-        margin-top:10px;
-        margin-left:10px;
-        }
-        .search input{
-            width:18%;
-            height: 30px;
-
-        }
-        .search button{
-            color:white;
-            background-color: rgb(22, 165, 222);
-            padding: 5px;
-            text-align: center;
-        }
-        .search input,button{
-            position: absolute;
-            right: 12px;
-            font-size: 18px;
-            border-color:silver;
-        }
-        .small
-        {
-           width:200px;
-           height:200px;
-           margin:10px;
-        }
-        .border{
-        border-width:5px;
-        border-color:black;
-        border-style:solid;
-        border-radius:50%;
-        }
-        .cirpic{
-            position:absolute;
-            top:35%;
-            margin-left: 40px;
-        }
-        .text{
-            position:absolute;
-            top:55%;
-            margin-left: 40px;
-            font-size: 20px;
-        }
-        .text2{
-            position:absolute;
-            top:60%;
-            margin-left:58px;
-        }
-    
-    </style>
-</head>
-<body>
-    <header>
-        <h2>Aura tech</h2>
-        </header>
-        <nav class="navbar">
-        
-        <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="people.html">People</a></li>
-        <li><a href="index.html">Home</a></li>
-        </ul>
-        </nav>
-        <div class="search"><input type="text" placeholder="Enter to Search">
-            <button>Search</button></div>
-        <div class="cirpic">
-            <img class="small border" src="rohith1.jpeg" width="500px">
-            <img class="small border" src="menon.jpeg" width="500px" >
-            <img class="small border" src="john.jpeg" width="500px">
-            <img class="small border" src="saro.jpeg" width="500px" >
-            <img class="small border" src="vidya.jpeg" width="500px">
-            <img class="small border" src="zion.jpeg" width="500px" >
-        </div>
-        <div class ="text">
-            <table cellpadding="87">
-                <tr div class="head">
-                    <th>Rohith</th>
-                    <th>Menon</th>
-                    <th>John</th>
-                    <th>   Saro</th>
-                    <th>   Vidya</th>
-                    <th>       Zion</th>
-                </tr>
-            </table>
-        </div>
-        <div class="text2">
-            <table cellpadding="83">
-                <tr>
-                    <td>founder</td>
-                    <td>Co-Founder</td>
-                    <td>CEO</td>
-                    <td>Director</td>
-                    <td>Asst.Director</td>
-                    <td>Manager</td>
-                </tr>
-            </table>
-        </div>
-      
-            <footer>
-                Designed and Developed by &copy; 2023
-                </footer>
-               
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-        color:black;
-        font-size: 45px;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        position: absolute;
-        top:35%;
-        }
-        body{
-        background-color:silver;
-        margin:0;
-        }
-        .navbar ul{
-        list-style-type:none;
-        background-color:blac;
-        
-        }
-        .navbar a{
-         color:white;
-        text-decoration:none;
-        padding:25px;
-        display:flex;
-        text-align:left;
-        position: relative;
-        font-size:20px;
-        top:-95px;
-        
-        }
-        .navbar a:hover{
-         background-color:black;
-        size:60px;
-        cursor: pointer;
-        }
-        .navbar li{
-        float:right;
-        }
-        h2{
-        color:white;
-        font-family:monospace;
-        font-size:60px;
-        background-color:black;
-        }
-        footer{
-        text-align: center;
-
-        background-color:black;
-        height:30px;
-        bottom:0;
-        width:100%;
-        color:white;
-        position:absolute;
-        
-        }
-        header
-        {
-        background-color:black;
-        height:10vh;
-        width:100%;
-        color:white;
-        }
-        header h2{
-        position:absolute;
-        color:white;
-        margin-top:10px;
-        margin-left:10px;
-        }
-        .search input{
-            width:18%;
-            height: 30px;
-
-        }
-        .search button{
-            color:white;
-            background-color: rgb(22, 165, 222);
-            padding: 5px;
-            text-align: center;
-        }
-        .search input,button{
-            position: absolute;
-            right: 12px;
-            font-size: 18px;
-            border-color:silver;
-        }
-        .small
-        {
-           width:200px;
-           height:200px;
-           margin:10px;
-        }
-        .border{
-        border-width:5px;
-        border-color:black;
-        border-style:solid;
-        border-radius:50%;
-        }
-        .cirpic{
-            position:absolute;
-            top:35%;
-            margin-left: 40px;
-        }
-        .text{
-            position:absolute;
-            top:55%;
-            margin-left: 40px;
-            font-size: 20px;
-        }
-        .text2{
-            position:absolute;
-            top:60%;
-            margin-left:58px;
-        }
-    
-    </style>
-</head>
-<body>
-    <header>
-        <h2>Aura tech</h2>
-        </header>
-        <nav class="navbar">
-        
-        <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="people.html">People</a></li>
-        <li><a href="index.html">Home</a></li>
-        </ul>
-        </nav>
-        <div class="search"><input type="text" placeholder="Enter to Search">
-            <button>Search</button></div>
-        <div class="cirpic">
-            <img class="small border" src="rohith1.jpeg" width="500px">
-            <img class="small border" src="menon.jpeg" width="500px" >
-            <img class="small border" src="john.jpeg" width="500px">
-            <img class="small border" src="saro.jpeg" width="500px" >
-            <img class="small border" src="vidya.jpeg" width="500px">
-            <img class="small border" src="zion.jpeg" width="500px" >
-        </div>
-        <div class ="text">
-            <table cellpadding="87">
-                <tr div class="head">
-                    <th>Rohith</th>
-                    <th>Menon</th>
-                    <th>John</th>
-                    <th>   Saro</th>
-                    <th>   Vidya</th>
-                    <th>       Zion</th>
-                </tr>
-            </table>
-        </div>
-        <div class="text2">
-            <table cellpadding="83">
-                <tr>
-                    <td>founder</td>
-                    <td>Co-Founder</td>
-                    <td>CEO</td>
-                    <td>Director</td>
-                    <td>Asst.Director</td>
-                    <td>Manager</td>
-                </tr>
-            </table>
-        </div>
-      
-            <footer>
-                Designed and Developed by &copy; 2023
-                </footer>
-               
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-        color: black;
-        font-size: 45px;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        position: absolute;
-        top:30%;
-        }
-        body{
-        background-color:silver;
-        margin:0;
-        }
-        .navbar ul{
-        list-style-type:none;
-        background-color:black;
-        
-        }
-        .navbar a{
-         color:white;
-        text-decoration:none;
-        padding:20px;
-        display:flex;
-        text-align:left;
-        position: relative;
-        font-size:20px;
-        top:-95px;
-        
-        }
-        .navbar a:hover{
-         background-color:lightblue;
-        size:60px;
-        cursor: pointer;
-        }
-        .navbar li{
-        float:right;
-        }
-        h2{
-        color:white;
-        font-family:monospace;
-        font-size:60px;
-        background-color:black;
-        }
-        footer{
-        text-align: center;    
-
-        background-color:black;
-        height:30px;
-        bottom:0;
-        width:100%;
-        color:white;
-        position:absolute;
-        
-        }
-        header
-        {
-        background-color:black;
-        height:10vh;
-        width:100%;
-        color:white;
-        }
-        header h2{
-        position:absolute;
-        color:white;
-        margin-top:9px;
-        margin-left:10px;
-        }
-        .search input{
-            width:18%;
-            height: 30px;
-
-        }
-        .search button{
-            color:white;
-            background-color: rgb(22, 165, 222);
-            padding: 5px;
-            text-align: center;
-        }
-        .search input,button{
-            position: absolute;
-            right: 12px;
-            font-size: 18px;
-            border-color:silver;
-        }
-        .line{
-            position: absolute;
-            top:43%;
-        color: black;
-            width:100%;
-            size:5px;
-        }
-        .coform {
-            background-color: white;
-            top:43%;
-        }
-        .coform form{
-            position: absolute;
-            top:45%;
-        }
-        .coform form h3{
-            font-size:30px;
-        }
-        .coform form input{
-            margin-left: 10px;
-            width:500px;
-            height:25px;
-        }
-        .coform form textarea{
-            margin-left: 10px;
-        }
-        .coform form button{
-            position: absolute;
-            background-color:  rgb(22, 165, 222);
-            color:white;
-            border-radius: 20%;
-            margin-left: 10px;
-        }
-        #submit{
-            left:0px;
-            width:20%;
-        }
-        .vl{
-            position:absolute;
-            border-left: 3px solid darkblue;
-            height: 440px;
-            margin-left: 800px;
-            top:40%;
-        }
-        #ci{
-            font-size: 30px;
-            margin-left: 40px;
-        }
-        .info{
-            position:absolute;
-            top:40%;
-            font-size: 25px;
-            background-color: white;
-            padding:70px 250px 95px 147px ;
-            margin-left: 800px;
-        }
-        .coform form{
-            background-color: white;
-            top:40%;
-            margin-left: 0px;
-            padding:0px 282px 50px 0px;
-        }
-    </style>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Software Development Company </title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(255, 255, 255, 0.75),rgba(0, 170, 255, 0.75));
+                background-size: cover;
+                background-position: center;
+            }
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo {
+                color:#000000;
+                font-size: 50px;
+                font-weight: 700;
+                letter-spacing: 3px;
+            }
+            span {
+                color: rgb(187, 184, 184);
+            }
+            form {
+                width: 300px;
+                height: 40px;
+                display: flex;
+                background: rgba(4, 250, 41, 0.2);
+                padding: 1px 1px;
+                font-size: 15px;
+                border-radius: 10px;
+                backdrop-filter: blur(4px) saturate(180%);
+            }
+            form input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 20px;
+                color: rgb(102, 103, 102);
+            } 
+            ::placeholder {
+                color: rgb(0, 0, 0);
+            }
+            form button {
+                border: 0;
+                outline: none;
+                padding: 5px 20px;
+                color: #ffffff;
+                border-radius: 10px;
+                background:#6e4ad2;
+                cursor: pointer;
+            }
+            .navbar li {
+                font-size: 30px;
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar li a {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                text-transform: uppercase;
+            }
+            .navbar li:hover {
+                border: 1px;
+                padding: 10px;
+                color: rgb(255, 255, 255);
+                background-color: #19c6d6;
+                transition: 0.5s; 
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+            }
+            .text h2 {
+                color: rgb(0, 0, 0);
+                font-weight: 800;
+                font-size: 50px;
+                letter-spacing: 3px;
+            }
+            .text p {
+                color: rgb(0, 0, 0);
+                text-transform: capitalize;
+                font-size: 25px;
+                margin-bottom: 30px;
+                word-spacing: 2px;
+                letter-spacing: 1px;
+            }
+            .login {
+                margin: 0px 10px;
+                border: 2px solid#000000;
+                padding: 13px 35px;
+                letter-spacing: 1px;
+                color: rgb(9, 9, 9);
+                border-radius: 30px;
+                background-color:#06c7ee;
+                text-decoration: none;
+            }
+            .login:hover {
+                border: 2px solid#ffffff;
+                color:#fbfbfb;
+                background-color: rgb(0, 0, 0);
+                transition: 0.5s;
+                cursor: pointer;
+            } 
+            .signup {
+                margin: 0px 10px;
+                border: 2px solid#010505;
+                padding: 13px 35px;
+                letter-spacing: 1px;
+                color: rgb(0, 0, 0);
+                border-radius: 30px;
+                background-color:#06c7ee;
+                text-decoration: none;
+            }
+            .signup:hover {
+                border: 2px solid#ffffff;
+                color:#ddbbbb;
+                background-color: rgb(0, 0, 0);
+                transition: 0.5s;
+                cursor: pointer;
+            }
+            footer {
+                background-color:#ffffff;
+                margin-top: auto;
+            }
+        </style>
     </head>
-    <body>
-        <header>
-            <h2>AuraTech</h2>
-            </header>
-            <nav class="navbar">
-            
+<body>
+    <div class="banner">
+        <br>
+        <div class="navbar">
+            <h1 class="logo">AI Smart</h1>
             <ul>
-            <li><a href="contact.html">Help</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="people.html">People</a></li>
-            <li><a href="index.html">Home</a></li>
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="product.html"> Products </a></li>
+                <li><a href="people.html"> People </a></li>
+                <li><a href="contact.html"> Contact </a></li>
             </ul>
-            </nav>
-            <div class="search"><input type="text" placeholder="Enter to Search">
-                <button>Search</button></div>
-                <div class="line">
-                    <hr color="darkblue">
-            </div>
-            <div class="coform">
-            <form>
-              <h3>&nbsp;Contact Us</h3>
-              <input type="text" placeholder="Your Name"><br><br>
-              <input type="text" placeholder="Your Email"><br><br>
-              <textarea rows="12" cols="66" >Your Message
-              </textarea><br>
-              <button id="submit">Submit</button>
+            <form action="" method="get">
+                <input type="text" placeholder="Enter to Search">
+                <button type="submit"> Search </button>
             </form>
         </div>
-        <div class="info">
-            <h3 id="ci" >Contact Info</h3><br>
-            <b>Address: </b>23,cumbum,theni<br><br>
-            <b>Email: </b>auratrch@gmail.com<br><br>
-            <b>Phone: </b>044-88989899
-        </div>
-        <div class="vl"></div>
+        <div class="content">
+            <div class="text">
+                <h2> Software Development Company </h2>
+                <br>
+                <p>AI Smart is a cutting-edge company specializing in AI-powered software solutions. They’re at the forefront of AI innovation, impacting various industries with their smart platforms.</p>
+                <br>
+                <div>
+                    <a href="#" class="login"> Log In </a>
+                    <a href="#" class="signup"> Sign Up </a>
+                </div>
+            </div>
+        </div>  
     </div>
-                <footer>
-                    Designed and Developed by Rohith.V &copy; 2023
-                    </footer>
-                   
-    </body>
-    </html>
+    <footer>
+        <center>Designed and Developed by AJITH KUMAR(2123230009) &copy; 2024</center>
+    </footer>
+</body>
+</html>
+
+contact.html
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Contact Us Page </title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(255, 255, 255, 0.941),rgba(1, 181, 246, 0.75));
+                background-size: cover;
+                background-position: center;
+            }
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .bg-contact {
+                border: 1px;
+                padding: 10px;
+                color: gray;
+                background-color:#08f03e;
+                border-radius: 30px;
+            }
+            .logo {
+                color:#000000;
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: 3px;
+            }
+            span {
+                color: gray;
+            }
+            .navbar form {
+                width: 300px;
+                height: 40px;
+                display: flex;
+                background: rgba(0, 0, 0, 0.2);
+                padding: 1px 1px;
+                font-size: 15px;
+                border-radius: 10px;
+                backdrop-filter: blur(4px) saturate(180%);
+            }
+            .navbar form input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 15px;
+                color: rgb(0, 0, 0);
+            } 
+            ::placeholder {
+                color: gray;
+            }
+            .navbar form button {
+                border: 0;
+                outline: none;
+                padding: 5px 20px;
+                color: rgb(253, 253, 253);
+                border-radius: 10px;
+                background:#00a6ff;
+                cursor: pointer;
+            }
+            .navbar li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar li a {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                text-transform: uppercase;
+            }
+            .navbar li:hover {
+                border: 1px;
+                padding: 10px;
+                color: rgb(11, 6, 117);
+                background-color:#00ffff;
+                transition: 0.5s; 
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            .box {
+                display: flex;
+                column-gap: 40px;
+                background: transparent;
+                position: relative;
+                top: 50px;
+            }
+            .box-1 {
+                height: 400px;
+                width: 400px;
+                border: 3px solid rgb(12, 12, 12);
+                border-radius: 20px;
+                background: transparent;
+                position: relative;
+                left: 250px;
+            }
+            .box-2 {
+                height: 400px;
+                width: 400px;
+                border: 3px solid#141314;
+                border-radius: 20px;
+                background: transparent;
+                position: relative;
+                left: 300px;
+            }
+            .box-1 form {
+                display: flex;
+                color: rgb(0, 0, 0);
+                background: transparent;
+                padding: 10px;
+                font-size: 15px;
+                position: relative;
+                top: 15px;
+            }
+            .box-1 form input {
+                background: transparent;
+                display: flex;
+                border: 1px solid rgb(16, 10, 10);
+                border-radius: 10px;
+                padding: 15px 30px;
+                font-size: 15px;
+                color: rgb(6, 4, 4);
+                position: relative;
+                top: 30px;
+            }
+            .box-1 form textarea {
+                background: transparent;
+                color: rgb(10, 8, 8);
+                padding: 15px 10px;
+                position: relative;
+                top: 30px;
+                left: 30px;
+                border: 1px solid rgb(14, 5, 5);
+                border-radius: 10px;
+            }
+            .box-1 form button {
+                border: 0;
+                outline: none;
+                padding: 10px 20px;
+                color: rgb(7, 3, 3);
+                border-radius: 30px;
+                background:#00ffff;
+                cursor: pointer;
+                position: relative;
+                top: 50px;
+            }
+            .box-2 h2 {
+                color: rgb(0, 0, 0);
+                position: relative;
+                top: 25px;
+                left: 50px;
+                font-size: 30px;
+            }
+            .box-2 p {
+                color: rgb(6, 1, 1);
+                position: relative;
+                top: 50px;
+                padding: 10px 80px;
+            }
+            .box-2 span {
+                color:#000000;
+                font-size: 20px;
+            }
+            footer {
+                background-color:#f3fcff;
+                margin-top: auto;
+            }
+        </style>
+    </head>
+<body>
+    <div class="banner">
+        <br>
+        <div class="navbar">
+            <h1 class="logo">AI Smart</h1>
+            <ul>
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="product.html"> Products </a></li>
+                <li><a href="people.html"> People </a></li>
+                <li><a href="contact.html" class="bg-contact"> Contact </a></li>
+            </ul>
+            <form action="" method="get">
+                <input type="text" placeholder="Enter to Search">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        <div class="box">
+            <div class="box-1">
+                <form>
+                    <center>
+                        <h1> Contact Us </h1>
+                        <input type="text" placeholder="Your Name">
+                        <br>
+                        <input type="email" placeholder="Your Email">
+                        <br>
+                        <textarea rows="4" cols="40" placeholder="Your Message"> </textarea>
+                        <br>
+                        <button type="submit"> Submit </button>
+                    </center>
+                </form>
+            </div>
+            <div class="box-2"> 
+                <h2> Contact Information </h2>
+                <p> <span>Address</span> : 11/1,kannaiah street,kondithope,chennai-600001</p>
+                <p> <span>Email</span> : ajith86673@gmail.com </p>
+                <p> <span>Phone</span> : 8667239165</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center>Designed and Developed by  AJITH KUMAR(212223230009) &copy; 2024</center>
+    </footer>
+</body>
+</html>
+
+
+product.html
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Product Page </title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(255, 255, 255, 0.941),rgba(1, 181, 246, 0.75));
+                background-size: cover;
+                background-position: center;
+            }
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .bg-product {
+                border: 1px;
+                padding: 10px;
+                color: gray;
+                background-color:#08e8f0;
+                border-radius: 30px;
+            }
+            .logo {
+                color:#050505;
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: 3px;
+            }
+            span {
+                color: gray;
+            }
+            form {
+                width: 300px;
+                height: 40px;
+                display: flex;
+                background: rgba(4, 250, 41, 0.2);
+                padding: 1px 1px;
+                font-size: 15px;
+                border-radius: 10px;
+                backdrop-filter: blur(4px) saturate(180%);
+            }
+            form input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 15px;
+                color: rgb(0, 2, 0);
+            } 
+            ::placeholder {
+                color: rgb(6, 6, 6);
+            }
+            form button {
+                border: 0;
+                outline: none;
+                padding: 5px 20px;
+                color: rgb(4, 4, 4);
+                border-radius: 10px;
+                background:#01a8fb;
+                cursor: pointer;
+            }
+            .navbar li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar li a {
+                text-decoration: none;
+                color: rgb(1, 1, 10);
+                text-transform: uppercase;
+            }
+            .navbar li:hover {
+                border: 1px;
+                padding: 10px;
+                color: rgb(11, 6, 117);
+                background-color:#00ccff;
+                transition: 0.5s; 
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            .container {
+                background: transparent;
+                padding: 10px 5%;
+                padding-bottom: 100px;
+            }
+            .container .box-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+                gap: 20px;
+            }
+            .container .box-container .box {
+                color: rgb(11, 1, 1);
+                box-shadow: 0 5px 10px rgba(0,0,0,.2);
+                border-radius: 10px;
+                background: transparent;
+                border: 1px solid rgb(30, 7, 243);
+                padding: 30px 20px;
+            }
+            .container .box-container .box img {
+                height: 200px;
+                border-radius: 10px;
+            }
+            .container .box-container .box h3 {
+                color:#030303;
+                font-size: large;
+                padding: 50px 10;
+            }
+            .container .box-container .box p {
+                color: gray;
+                font-size: small;
+                line-height: 1.5;
+            }
+            footer {
+                background-color:#ffffff;
+                margin-top: auto;
+            }
+        </style>
+    </head>
+<body>
+    <div class="banner">
+        <br>
+        <div class="navbar">
+            <h1 class="logo">AI Smart</h1>
+            <ul>c:\Users\admin\Pictures\Screenshots\c:\Users\admin\Pictures\Screenshots\
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="product.html" class="bg-product"> Products </a></li>
+                <li><a href="people.html"> People </a></li>
+                <li><a href="contact.html"> Contact us</a></li>
+            </ul>
+            <form action="" method="get">
+                <input type="text" placeholder="Enter to Search">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="box-container" align="center">
+              
+                
+                <div class="box">
+                    <h3 align="center">Gen AI</h3>
+                    <image src="c:\Users\admin\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\C322182E6279FD00CF24101223265689\WhatsApp Image 2024-05-09 at 21.38.30_cdd25e85.jpg" width="150" height="500" align="center"></image>
+                </div>
+                <div class="box">
+                    <h3 align="center"> NLP </h3>
+                    <image src="nlp.png" width="150" height="500"></image>
+                </div>
+                <div class="box">
+                    <h3 align="center">ML Solutions</h3>
+                    <image src="ml solutions.png" width="150" height="500"></image>
+                </div>
+                <div class="box">
+                    <h3 align="center">AI-Driven Automation</h3>
+                    <image src="ai automation.png" width="150" height="500"></image>
+                </div>
+                <div class="box">
+                    <h3 align="center">AI Security</h3>
+                    <image src="ai security.png" width="150" height="500"></image>
+                </div>
+                <div class="box">
+                    <h3 align="center">Customer enterprise</h3>
+                    <image src="customer enterprises.png" width="150" height="500"></image>
+                </div>
+
+            </div>
+              
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center>Designed and Developed by AJITH KUMAR (212223230009) &copy; 2024</center>
+    </footer>
+</body>
+</html>
 ~~~
 ## OUTPUT:
-![image](https://github.com/Ajith1413/softweb/assets/139842524/04659030-21b7-4a31-801b-69922aedcc88)
-![image](https://github.com/Ajith1413/softweb/assets/139842524/44b23ff3-7d0e-4a84-9e47-841c1a216e52)
-![image](https://github.com/Ajith1413/softweb/assets/139842524/41ce384d-9676-4298-a0f9-b25ed33cf694)
-![image](https://github.com/Ajith1413/softweb/assets/139842524/ce338a21-5314-4649-924d-9b65c1d18774)
 
+![image](https://github.com/Ajith1413/softweb/assets/139842524/814ea016-b141-4c1e-8357-e93f966c70c1)
+
+
+![image](https://github.com/Ajith1413/softweb/assets/139842524/b3647011-f27e-4730-a4b0-2aa65e96cd1d)
+
+
+![image](https://github.com/Ajith1413/softweb/assets/139842524/e944cb39-bf78-4a81-8e87-79ccfb54f1fb)
+
+
+
+![image](https://github.com/Ajith1413/softweb/assets/139842524/5a96b9f6-bd6e-4e9f-a65a-1b1eb19c0429)
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
